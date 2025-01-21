@@ -4,6 +4,7 @@ title = "Harry's Personal Site"
 _theme = 'ananke'
 theme = 'stack'
 timeZone = "ROC"
+disqusShortName = "hugo-harry"
 [taxonomies]
 category = "categories"
 tag = "tags"

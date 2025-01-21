@@ -5,8 +5,8 @@ rssFullContent = true
 favicon = "/favicon.png"
 
 [footer]
-since = 2020
-customText = ""
+since = 2025
+customText = "by Harry"
 
 [dateFormat]
 published = "Jan 02, 2006"
@@ -22,8 +22,8 @@ local = true
 src = "img/avatar.png"
 
 [article]
-headingAnchor = false
-math = false
+headingAnchor = true
+math = true
 readingTime = true
 
 [article.license]
