@@ -19,7 +19,7 @@ subtitle = "Not your favorite site."
 [sidebar.avatar]
 enabled = true
 local = true
-src = "img/avatar.png"
+src = "img/avaharry.jpg"
 
 [article]
 headingAnchor = true

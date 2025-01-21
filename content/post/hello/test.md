@@ -16,3 +16,6 @@ weight: 1       # You can add weight to some posts to override the default sorti
 ## Has 
 
 ### TOCs
+
+[Repo of the theme](https://github.com/CaiJimmy/hugo-theme-stack)
+
