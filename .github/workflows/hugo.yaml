@@ -46,6 +46,9 @@ jobs:
           ref: ghpages
           submodules: recursive
           fetch-depth: 0
+      - name: Fetch and checkout submodule to remote master branch
+        run: |
+          git submodule update --remote content/post/HarrysNotes
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
