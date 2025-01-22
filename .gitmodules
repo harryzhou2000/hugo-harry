@@ -5,6 +5,6 @@
 	path = themes/stack
 	url = https://github.com/CaiJimmy/hugo-theme-stack
 [submodule "content/page/HarrysNotes"]
-	path = content/page/HarrysNotes
+	path = content/post/HarrysNotes
 	branch = main
 	url = https://github.com/harryzhou2000/HarrysNotes
