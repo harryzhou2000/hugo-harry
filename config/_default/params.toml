@@ -77,12 +77,12 @@ enabled = true
 ## Comments
 [comments]
 enabled = true
-provider = "disqus"
+provider = "twikoo"
 
 [comments.disqusjs]
 shortname = ""
 apiUrl = ""
-apiKey = "6lrL1hGtCZNYCoUPqaIRPRf0Pi9Tu2CcCnBvG05XEzKBLx8TFYOCUwprD0ebNKxi"
+apiKey = ""
 admin = ""
 adminLabel = ""
 
@@ -117,7 +117,7 @@ placeholder = ""
 admin = "Admin"
 
 [comments.twikoo]
-envId = ""
+envId = "https://harryzhou-spacefortwikoo.hf.space"
 region = ""
 path = ""
 lang = ""
@@ -128,15 +128,16 @@ serverName = "cactus.chat"
 siteName = ""
 
 [comments.giscus]
-repo = ""
-repoID = ""
-category = ""
-categoryID = ""
-mapping = ""
+repo = "harryzhou2000/hugo-harry"
+repoID = "R_kgDONta1Bw"
+category = "Announcements"
+categoryID = "DIC_kwDONta1B84CmRpD"
+mapping = "pathname"
 lightTheme = ""
 darkTheme = ""
 reactionsEnabled = 1
 emitMetadata = 0
+inputPosition="top"
 
 [comments.gitalk]
 owner = ""
