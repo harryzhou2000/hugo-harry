@@ -117,7 +117,7 @@ placeholder = ""
 admin = "Admin"
 
 [comments.twikoo]
-envId = "https://harryzhou-spacefortwikoo.hf.space"
+envId = "https://harry-twikoo-netify.netlify.app/.netlify/functions/twikoo"
 region = ""
 path = ""
 lang = ""
