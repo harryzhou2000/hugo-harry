@@ -1,0 +1,24 @@
+<!-- {{- partial "helper/external" (dict "Context" . "Namespace" "KaTeX") -}} -->
+<!-- <script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script> -->
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+    MathJax = {
+        loader: { load: ['[tex]/physics'] },
+        tex: {
+            displayMath: [['\\[', '\\]'], ['$$', '$$']],  // block
+            inlineMath: [['\\(', '\\)'], ['$', '$']],    // inline,
+            packages: { '[+]': ['physics'] }
+        }
+    };
+</script>
