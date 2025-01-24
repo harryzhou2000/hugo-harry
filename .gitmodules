@@ -8,3 +8,7 @@
 	path = content/post/HarrysNotes
 	branch = main
 	url = https://github.com/harryzhou2000/HarrysNotes
+[submodule "content/blog/HarrysShare"]
+	path = content/blog/HarrysShare
+	url = https://github.com/harryzhou2000/HarrysShare
+	branch = main

@@ -3,6 +3,7 @@ title = 'My First Post'
 date = 2025-01-21T14:39:28+08:00
 tags = [ "Hugo"]
 categories = [ "Blog" ]
+type = "post"
 +++
 <!-- draft = true -->
 

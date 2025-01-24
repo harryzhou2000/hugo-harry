@@ -1,8 +1,8 @@
 # Pages placed under these sections will be shown on homepage and archive page.
-mainSections = ["post"]
+mainSections = ["post", "blog"]
 # Output page's full content in RSS.
 rssFullContent = true
-favicon = "/favicon.svg"
+favicon = "/favicon.jpg"
 
 [footer]
 since = 2025
@@ -51,6 +51,15 @@ type = "tag-cloud"
 
 [widgets.homepage.params]
 limit = 10
+
+[[widgets.page]]
+type = "search"
+
+[[widgets.page]]
+type = "categories"
+
+[widgets.page.params]
+limit = 5
 
 [[widgets.page]]
 type = "toc"
@@ -137,7 +146,7 @@ lightTheme = ""
 darkTheme = ""
 reactionsEnabled = 1
 emitMetadata = 0
-inputPosition="top"
+inputPosition = "top"
 
 [comments.gitalk]
 owner = ""
