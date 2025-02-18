@@ -56,13 +56,13 @@ limit = 10
 type = "search"
 
 [[widgets.page]]
+type = "toc"
+
+[[widgets.page]]
 type = "categories"
 
 [widgets.page.params]
 limit = 5
-
-[[widgets.page]]
-type = "toc"
 
 [opengraph.twitter]
 site = ""
