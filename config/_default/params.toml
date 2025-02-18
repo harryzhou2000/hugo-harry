@@ -62,7 +62,7 @@ type = "toc"
 type = "categories"
 
 [widgets.page.params]
-limit = 5
+limit = 8
 
 [opengraph.twitter]
 site = ""
