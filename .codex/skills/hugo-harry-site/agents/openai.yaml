@@ -1,0 +1,4 @@
+interface:
+  display_name: "Harry's Hugo Site"
+  short_description: "Manage and write posts for the hugo-harry Hugo site."
+  default_prompt: "Help manage or write content for the hugo-harry Hugo site. Always obtain explicit user authorization before git commit, git push, submodule push, or any GitHub Pages deployment action."
