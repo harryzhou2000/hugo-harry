@@ -73,7 +73,7 @@ Typical workflow:
 
 ## Media storage policy
 
-The user may provide a separate GitHub repository for images and videos (for example, a `resources-0` repo).
+The user may provide a separate GitHub repository for images and videos (for example, `~/projects/resources-0` or `https://github.com/harryzhou2000/resources-0`).
 
 If the user **explicitly authorizes** media uploads for a given task, you may:
 
@@ -82,7 +82,7 @@ If the user **explicitly authorizes** media uploads for a given task, you may:
 3. Reference it in the post with a raw GitHub content URL, such as:
    `https://raw.githubusercontent.com/harryzhou2000/resources-0/main/2026/reaction-experiments/front_marker_time.png`
 
-Keep media out of the Hugo content submodules unless the user explicitly asks for local bundles. Each future media push still requires explicit user authorization.
+For the current work, use `~/projects/resources-0` as the resources repo and place assets under `resources-0/<year>/<post-name>/`. Each future media push still requires explicit user authorization.
 
 
 ## Building, previewing, and deploying
