@@ -71,6 +71,20 @@ Typical workflow:
   - Inline: `\( ... \)`
 - Use the existing `bilibili` shortcode for Bilibili embeds: `{{< bilibili BVID >}}`.
 
+## Media storage policy
+
+The user may provide a separate GitHub repository for images and videos (for example, a `resources-0` repo).
+
+If the user **explicitly authorizes** media uploads for a given task, you may:
+
+1. Add the image/video to the resources repo under a stable path (e.g., `resources-0/<year>/<post-name>/`).
+2. Commit and push it to GitHub.
+3. Reference it in the post with a raw GitHub content URL, such as:
+   `https://raw.githubusercontent.com/harryzhou2000/resources-0/main/2026/reaction-experiments/front_marker_time.png`
+
+Keep media out of the Hugo content submodules unless the user explicitly asks for local bundles. Each future media push still requires explicit user authorization.
+
+
 ## Building, previewing, and deploying
 
 ### Local

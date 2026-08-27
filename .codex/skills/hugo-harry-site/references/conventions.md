@@ -150,6 +150,18 @@ Do not change these values unless explicitly asked.
 - **Site-wide assets:** `assets/img/` is processed by Hugo's asset pipeline; `static/` is copied as-is.
 - **Favicon:** served from `/favicon.jpeg`.
 
+## Media storage
+
+When the user provides a resources repo (e.g., `~/projects/resources-0` or `https://github.com/harryzhou2000/resources-0`) and explicitly authorizes media uploads for the current task:
+
+1. Place the image/video in the resources repo under a stable, year/post-based path.
+2. Add, commit, and push to the resources repo.
+3. In the Hugo post, reference the raw GitHub content URL:
+   `https://raw.githubusercontent.com/harryzhou2000/resources-0/main/<path>`
+
+Avoid adding large binary files to `content/post/HarrysNotes` or `content/blog/HarrysShare` unless the user asks for a leaf bundle with local assets.
+
+
 ## Shortcodes
 
 Known site-specific shortcode (defined in theme or layouts):
