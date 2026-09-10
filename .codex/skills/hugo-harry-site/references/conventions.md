@@ -45,7 +45,37 @@ git submodule update --remote content/blog/HarrysShare
 
 ## Frontmatter samples
 
-### Regular post (single markdown file)
+### Standard post (leaf bundle)
+
+Use a leaf bundle for new posts by default. It keeps the page source and any
+page-local artifacts together:
+
+```text
+content/post/HarrysNotes/<section>/<post-slug>/
+├── index.md
+├── cover.png                 # optional local cover
+└── figure-or-download.ext    # optional page-local artifact
+```
+
+```markdown
+---
+title: ArrayTransformer bench
+date: 2025-03-13T22:31:56+08:00
+type: post
+image: cover.png
+categories: ["DNDSR"]
+tags: ["HPC", "MPI"]
+---
+```
+
+Use page-local artifact filenames directly in Markdown, for example
+`![Result](figure.png)`. An external media URL remains valid when the asset is
+intentionally stored elsewhere.
+
+### Small single-file post
+
+Use a standalone Markdown file only when the note is short and does not need,
+or reasonably expect to need, page-local artifacts:
 
 ```markdown
 ---

@@ -52,12 +52,17 @@ git submodule update --remote content/post/HarrysNotes content/blog/HarrysShare
 
 Create posts inside the correct submodule and section. Use the conventions in [references/conventions.md](references/conventions.md) for frontmatter, bundle layout, and asset handling.
 
+Hugo supports two post forms:
+
+- **Leaf bundle (standard):** `<section>/<post-slug>/index.md`, with any post-local artifacts beside `index.md`. Prefer this form for new posts, including posts that initially use only externally hosted media; it keeps later local assets, downloads, or diagrams naturally scoped to the page.
+- **Single file:** `<section>/<post-slug>.md`. Use this only for a genuinely small note with no likely page-local artifacts.
+
 Typical workflow:
 
 1. Decide the section (`post` for technical notes, `blog` for casual shares).
-2. Create the markdown file under the corresponding submodule path.
+2. Create a leaf bundle under the corresponding submodule path unless the single-file exception clearly fits.
 3. Add YAML frontmatter with `title`, `date`, and `type: post`.
-4. Put related images in the same folder for leaf bundles, or use an `image` URL/path in frontmatter.
+4. Put related images in the bundle directory, or use an `image` URL/path in frontmatter.
 5. Run `hugo serve -D` locally to preview.
 
 ## Writing conventions
